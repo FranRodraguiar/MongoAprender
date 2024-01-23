@@ -10,6 +10,7 @@ const coleccion = process.env.COLECCION;
 async function fLerDatos(req,res) {
     let envio = {};
     try {
+        //Esto é imprescindible para conectarse
         await client.connect();
         // BBDD y coleccion van aqui
         const db = client.db(database);
